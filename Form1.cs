@@ -615,9 +615,40 @@ namespace StatisticasFutbol
                         " AND away ='" + home + "'" +
                         " AND totalgols > 2";
 
+                    /*/Media de Escanteios Entre As Equipes
+                    string sql_Media_Cantos = "SELECT ROUND(AVG(totalCantos),2) FROM fdados " +
+                        " WHERE Liga ='" + liga + "'" +
+                        " AND home ='" + home + "'" +
+                        " AND away ='" + away + "'" +
+                        " OR home ='" + away + "'" +
+                        " AND away ='" + home + "'";
+                    */
+
+                    //Solução usando Recurso Nativo
+                    //------------------------------------------------------------------------
+                    double media;
+                    double total = 0;
+                    int valor = 0;
+
+                    foreach (DataGridViewRow row in DGVResumo.Rows)
+                    {
+                        total += Convert.ToDouble(row.Cells[5].Value);
+                        if ((int)row.Cells[5].Value > 6)
+                        {
+                            valor++;
+                        }
+                    }
+
+                    media = Math.Round(total / DGVResumo.RowCount, 2);
+                    lbl_media_Cantos.Text = $"Nos Ultimos {total_jogos} Encontros A média de Escanteios Entre as Equipes é {media}";
+                    lbl_europa_ambas.Text = $"{valor} Com Mais de 6 Escanteios Entre as Equipes";
+                    //-------------------------------------------------------------------------
+
                     conectar.Jogos_H2H(sql_jogos_Mais_1_gol, "De " + total_jogos + " Jogos ", lbl_europa_maisde_1gol, " bateu OVER 1.5");
 
                     conectar.Jogos_H2H(sql_jogos_Mais_2_gol, "De " + total_jogos + " Jogos ", lbl_europa_maisde2_gol, " bateu OVER 2.5");
+
+
                 }
             }
 

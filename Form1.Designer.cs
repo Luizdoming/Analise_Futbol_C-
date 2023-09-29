@@ -125,6 +125,7 @@
             this.ita = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.laliga = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.lbl_media_Cantos = new System.Windows.Forms.Label();
             this.painel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVResumo)).BeginInit();
             this.painel_europa_h2h.SuspendLayout();
@@ -1058,6 +1059,7 @@
             this.painel_europa_h2h.BackColor = System.Drawing.Color.Transparent;
             this.painel_europa_h2h.BorderColor = System.Drawing.Color.White;
             this.painel_europa_h2h.BorderRadius = 15;
+            this.painel_europa_h2h.Controls.Add(this.lbl_media_Cantos);
             this.painel_europa_h2h.Controls.Add(this.lbl_europa_ambas);
             this.painel_europa_h2h.Controls.Add(this.lbl_europa_maisde2_gol);
             this.painel_europa_h2h.Controls.Add(this.lbl_europa_maisde_1gol);
@@ -1080,7 +1082,7 @@
             this.lbl_europa_ambas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(44)))), ((int)(((byte)(52)))));
             this.lbl_europa_ambas.Cursor = System.Windows.Forms.Cursors.Default;
             this.lbl_europa_ambas.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_europa_ambas.ForeColor = System.Drawing.Color.DimGray;
+            this.lbl_europa_ambas.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbl_europa_ambas.Location = new System.Drawing.Point(10, 182);
             this.lbl_europa_ambas.Name = "lbl_europa_ambas";
             this.lbl_europa_ambas.Size = new System.Drawing.Size(212, 65);
@@ -1095,7 +1097,7 @@
             this.lbl_europa_maisde2_gol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(44)))), ((int)(((byte)(52)))));
             this.lbl_europa_maisde2_gol.Cursor = System.Windows.Forms.Cursors.Default;
             this.lbl_europa_maisde2_gol.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_europa_maisde2_gol.ForeColor = System.Drawing.Color.DimGray;
+            this.lbl_europa_maisde2_gol.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbl_europa_maisde2_gol.Location = new System.Drawing.Point(10, 95);
             this.lbl_europa_maisde2_gol.Name = "lbl_europa_maisde2_gol";
             this.lbl_europa_maisde2_gol.Size = new System.Drawing.Size(212, 65);
@@ -1110,7 +1112,7 @@
             this.lbl_europa_maisde_1gol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(44)))), ((int)(((byte)(52)))));
             this.lbl_europa_maisde_1gol.Cursor = System.Windows.Forms.Cursors.Default;
             this.lbl_europa_maisde_1gol.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_europa_maisde_1gol.ForeColor = System.Drawing.Color.DimGray;
+            this.lbl_europa_maisde_1gol.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbl_europa_maisde_1gol.Location = new System.Drawing.Point(10, 8);
             this.lbl_europa_maisde_1gol.Name = "lbl_europa_maisde_1gol";
             this.lbl_europa_maisde_1gol.Size = new System.Drawing.Size(212, 65);
@@ -1530,6 +1532,21 @@
             this.guna2CirclePictureBox1.TabStop = false;
             this.guna2CirclePictureBox1.UseTransparentBackground = true;
             // 
+            // lbl_media_Cantos
+            // 
+            this.lbl_media_Cantos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_media_Cantos.AutoEllipsis = true;
+            this.lbl_media_Cantos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(44)))), ((int)(((byte)(52)))));
+            this.lbl_media_Cantos.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lbl_media_Cantos.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_media_Cantos.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbl_media_Cantos.Location = new System.Drawing.Point(10, 452);
+            this.lbl_media_Cantos.Name = "lbl_media_Cantos";
+            this.lbl_media_Cantos.Size = new System.Drawing.Size(212, 65);
+            this.lbl_media_Cantos.TabIndex = 87;
+            // 
             // frm_futbol
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1727,6 +1744,7 @@
         private Guna.UI2.WinForms.Guna2Button bt_total_jogos;
         private System.Windows.Forms.Label label30;
         private Guna.UI2.WinForms.Guna2Button bt_media_cantos_geral;
+        private System.Windows.Forms.Label lbl_media_Cantos;
     }
 }
 
