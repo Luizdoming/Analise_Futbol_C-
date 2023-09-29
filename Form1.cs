@@ -641,7 +641,7 @@ namespace StatisticasFutbol
 
                     media = Math.Round(total / DGVResumo.RowCount, 2);
                     lbl_media_Cantos.Text = $"Nos Ultimos {total_jogos} Encontros A média de Escanteios Entre as Equipes é {media}";
-                    lbl_europa_ambas.Text = $"{valor} Com Mais de 6 Escanteios Entre as Equipes";
+                    lbl_europa_ambas.Text = $"Tivemos {valor} Jogos Com Mais de 6 Escanteios Entre as Equipes";
                     //-------------------------------------------------------------------------
 
                     conectar.Jogos_H2H(sql_jogos_Mais_1_gol, "De " + total_jogos + " Jogos ", lbl_europa_maisde_1gol, " bateu OVER 1.5");
