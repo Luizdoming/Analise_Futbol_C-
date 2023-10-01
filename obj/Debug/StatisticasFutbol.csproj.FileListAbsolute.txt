@@ -2,7 +2,6 @@ D:\System_Desenvolvidos\Futbol\StatisticasFutbol\bin\Debug\StatisticasFutbol.exe
 D:\System_Desenvolvidos\Futbol\StatisticasFutbol\bin\Debug\StatisticasFutbol.exe
 D:\System_Desenvolvidos\Futbol\StatisticasFutbol\bin\Debug\StatisticasFutbol.pdb
 D:\System_Desenvolvidos\Futbol\StatisticasFutbol\bin\Debug\Guna.UI2.dll
-D:\System_Desenvolvidos\Futbol\StatisticasFutbol\bin\Debug\MySql.Data.dll
 D:\System_Desenvolvidos\Futbol\StatisticasFutbol\bin\Debug\Google.Protobuf.dll
 D:\System_Desenvolvidos\Futbol\StatisticasFutbol\bin\Debug\ZstdNet.dll
 D:\System_Desenvolvidos\Futbol\StatisticasFutbol\bin\Debug\K4os.Compression.LZ4.Streams.dll

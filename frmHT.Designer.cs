@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.dgv_dados = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Cbo_equipes = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -53,9 +53,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2ContainerControl2 = new Guna.UI2.WinForms.Guna2ContainerControl();
-            this.rb_Jogos_Gols_Ht_Visitante = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rb_Jogos_Gols_Ht_Mandante = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.rb_Jogos_Cantos_Ht_Visitante = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rb_Jogos_Cantos_Ht_Mandante = new Guna.UI2.WinForms.Guna2RadioButton();
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -77,29 +75,29 @@
             this.dgv_dados.AllowUserToDeleteRows = false;
             this.dgv_dados.AllowUserToResizeColumns = false;
             this.dgv_dados.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.dgv_dados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.dgv_dados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgv_dados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_dados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_dados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgv_dados.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_dados.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_dados.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgv_dados.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
             this.dgv_dados.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.dgv_dados.Location = new System.Drawing.Point(10, 126);
@@ -107,14 +105,14 @@
             this.dgv_dados.Name = "dgv_dados";
             this.dgv_dados.ReadOnly = true;
             this.dgv_dados.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.Info;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_dados.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_dados.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgv_dados.RowHeadersVisible = false;
             this.dgv_dados.RowHeadersWidth = 35;
             this.dgv_dados.Size = new System.Drawing.Size(1001, 486);
@@ -215,7 +213,7 @@
             this.rb_GolsHtHome.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rb_GolsHtHome.CheckedState.InnerOffset = -4;
             this.rb_GolsHtHome.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.rb_GolsHtHome.Location = new System.Drawing.Point(193, 51);
+            this.rb_GolsHtHome.Location = new System.Drawing.Point(193, 38);
             this.rb_GolsHtHome.Name = "rb_GolsHtHome";
             this.rb_GolsHtHome.Size = new System.Drawing.Size(97, 24);
             this.rb_GolsHtHome.TabIndex = 5;
@@ -238,7 +236,7 @@
             this.rb_GolsHtAway.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rb_GolsHtAway.CheckedState.InnerOffset = -4;
             this.rb_GolsHtAway.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.rb_GolsHtAway.Location = new System.Drawing.Point(193, 81);
+            this.rb_GolsHtAway.Location = new System.Drawing.Point(193, 66);
             this.rb_GolsHtAway.Name = "rb_GolsHtAway";
             this.rb_GolsHtAway.Size = new System.Drawing.Size(86, 24);
             this.rb_GolsHtAway.TabIndex = 5;
@@ -261,7 +259,7 @@
             this.rb_Cantos_Ht_home.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rb_Cantos_Ht_home.CheckedState.InnerOffset = -4;
             this.rb_Cantos_Ht_home.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.rb_Cantos_Ht_home.Location = new System.Drawing.Point(12, 51);
+            this.rb_Cantos_Ht_home.Location = new System.Drawing.Point(12, 38);
             this.rb_Cantos_Ht_home.Name = "rb_Cantos_Ht_home";
             this.rb_Cantos_Ht_home.Size = new System.Drawing.Size(97, 24);
             this.rb_Cantos_Ht_home.TabIndex = 5;
@@ -284,7 +282,7 @@
             this.rb_Cantos_Ht_Away.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rb_Cantos_Ht_Away.CheckedState.InnerOffset = -4;
             this.rb_Cantos_Ht_Away.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.rb_Cantos_Ht_Away.Location = new System.Drawing.Point(12, 81);
+            this.rb_Cantos_Ht_Away.Location = new System.Drawing.Point(12, 66);
             this.rb_Cantos_Ht_Away.Name = "rb_Cantos_Ht_Away";
             this.rb_Cantos_Ht_Away.Size = new System.Drawing.Size(86, 24);
             this.rb_Cantos_Ht_Away.TabIndex = 5;
@@ -314,7 +312,7 @@
             this.guna2ContainerControl1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.guna2ContainerControl1.Location = new System.Drawing.Point(660, 9);
             this.guna2ContainerControl1.Name = "guna2ContainerControl1";
-            this.guna2ContainerControl1.Size = new System.Drawing.Size(312, 105);
+            this.guna2ContainerControl1.Size = new System.Drawing.Size(312, 94);
             this.guna2ContainerControl1.TabIndex = 6;
             this.guna2ContainerControl1.Text = "guna2ContainerControl1";
             // 
@@ -379,9 +377,7 @@
             // guna2ContainerControl2
             // 
             this.guna2ContainerControl2.BorderRadius = 10;
-            this.guna2ContainerControl2.Controls.Add(this.rb_Jogos_Gols_Ht_Visitante);
             this.guna2ContainerControl2.Controls.Add(this.rb_Jogos_Gols_Ht_Mandante);
-            this.guna2ContainerControl2.Controls.Add(this.rb_Jogos_Cantos_Ht_Visitante);
             this.guna2ContainerControl2.Controls.Add(this.rb_Jogos_Cantos_Ht_Mandante);
             this.guna2ContainerControl2.Controls.Add(this.label7);
             this.guna2ContainerControl2.Controls.Add(this.label10);
@@ -389,35 +385,12 @@
             this.guna2ContainerControl2.Controls.Add(this.label8);
             this.guna2ContainerControl2.Controls.Add(this.label4);
             this.guna2ContainerControl2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.guna2ContainerControl2.Location = new System.Drawing.Point(310, 12);
+            this.guna2ContainerControl2.Location = new System.Drawing.Point(294, 12);
             this.guna2ContainerControl2.Name = "guna2ContainerControl2";
-            this.guna2ContainerControl2.Size = new System.Drawing.Size(340, 102);
+            this.guna2ContainerControl2.Size = new System.Drawing.Size(340, 63);
             this.guna2ContainerControl2.TabIndex = 7;
             this.guna2ContainerControl2.Text = "guna2ContainerControl2";
             this.guna2HtmlToolTip1.SetToolTip(this.guna2ContainerControl2, "Selecione Uma Equipe Para Realizar Consulta");
-            // 
-            // rb_Jogos_Gols_Ht_Visitante
-            // 
-            this.rb_Jogos_Gols_Ht_Visitante.Animated = true;
-            this.rb_Jogos_Gols_Ht_Visitante.AutoSize = true;
-            this.rb_Jogos_Gols_Ht_Visitante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.rb_Jogos_Gols_Ht_Visitante.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rb_Jogos_Gols_Ht_Visitante.CheckedState.BorderThickness = 0;
-            this.rb_Jogos_Gols_Ht_Visitante.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rb_Jogos_Gols_Ht_Visitante.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rb_Jogos_Gols_Ht_Visitante.CheckedState.InnerOffset = -4;
-            this.rb_Jogos_Gols_Ht_Visitante.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.rb_Jogos_Gols_Ht_Visitante.Location = new System.Drawing.Point(196, 69);
-            this.rb_Jogos_Gols_Ht_Visitante.Name = "rb_Jogos_Gols_Ht_Visitante";
-            this.rb_Jogos_Gols_Ht_Visitante.Size = new System.Drawing.Size(86, 24);
-            this.rb_Jogos_Gols_Ht_Visitante.TabIndex = 3;
-            this.rb_Jogos_Gols_Ht_Visitante.Text = "Visitante";
-            this.guna2HtmlToolTip1.SetToolTip(this.rb_Jogos_Gols_Ht_Visitante, "Selecione Uma Equipe Para Realizar Consulta");
-            this.rb_Jogos_Gols_Ht_Visitante.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rb_Jogos_Gols_Ht_Visitante.UncheckedState.BorderThickness = 2;
-            this.rb_Jogos_Gols_Ht_Visitante.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rb_Jogos_Gols_Ht_Visitante.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rb_Jogos_Gols_Ht_Visitante.UseVisualStyleBackColor = false;
             // 
             // rb_Jogos_Gols_Ht_Mandante
             // 
@@ -430,40 +403,17 @@
             this.rb_Jogos_Gols_Ht_Mandante.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rb_Jogos_Gols_Ht_Mandante.CheckedState.InnerOffset = -4;
             this.rb_Jogos_Gols_Ht_Mandante.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.rb_Jogos_Gols_Ht_Mandante.Location = new System.Drawing.Point(196, 39);
+            this.rb_Jogos_Gols_Ht_Mandante.Location = new System.Drawing.Point(196, 36);
             this.rb_Jogos_Gols_Ht_Mandante.Name = "rb_Jogos_Gols_Ht_Mandante";
-            this.rb_Jogos_Gols_Ht_Mandante.Size = new System.Drawing.Size(97, 24);
+            this.rb_Jogos_Gols_Ht_Mandante.Size = new System.Drawing.Size(92, 24);
             this.rb_Jogos_Gols_Ht_Mandante.TabIndex = 3;
-            this.rb_Jogos_Gols_Ht_Mandante.Text = "Mandante";
+            this.rb_Jogos_Gols_Ht_Mandante.Text = "Selecione";
             this.guna2HtmlToolTip1.SetToolTip(this.rb_Jogos_Gols_Ht_Mandante, "Selecione Uma Equipe Para Realizar Consulta");
             this.rb_Jogos_Gols_Ht_Mandante.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.rb_Jogos_Gols_Ht_Mandante.UncheckedState.BorderThickness = 2;
             this.rb_Jogos_Gols_Ht_Mandante.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.rb_Jogos_Gols_Ht_Mandante.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             this.rb_Jogos_Gols_Ht_Mandante.UseVisualStyleBackColor = false;
-            // 
-            // rb_Jogos_Cantos_Ht_Visitante
-            // 
-            this.rb_Jogos_Cantos_Ht_Visitante.Animated = true;
-            this.rb_Jogos_Cantos_Ht_Visitante.AutoSize = true;
-            this.rb_Jogos_Cantos_Ht_Visitante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.rb_Jogos_Cantos_Ht_Visitante.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rb_Jogos_Cantos_Ht_Visitante.CheckedState.BorderThickness = 0;
-            this.rb_Jogos_Cantos_Ht_Visitante.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rb_Jogos_Cantos_Ht_Visitante.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rb_Jogos_Cantos_Ht_Visitante.CheckedState.InnerOffset = -4;
-            this.rb_Jogos_Cantos_Ht_Visitante.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.rb_Jogos_Cantos_Ht_Visitante.Location = new System.Drawing.Point(6, 69);
-            this.rb_Jogos_Cantos_Ht_Visitante.Name = "rb_Jogos_Cantos_Ht_Visitante";
-            this.rb_Jogos_Cantos_Ht_Visitante.Size = new System.Drawing.Size(86, 24);
-            this.rb_Jogos_Cantos_Ht_Visitante.TabIndex = 3;
-            this.rb_Jogos_Cantos_Ht_Visitante.Text = "Visitante";
-            this.guna2HtmlToolTip1.SetToolTip(this.rb_Jogos_Cantos_Ht_Visitante, "Selecione Uma Equipe Para Realizar Consulta");
-            this.rb_Jogos_Cantos_Ht_Visitante.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rb_Jogos_Cantos_Ht_Visitante.UncheckedState.BorderThickness = 2;
-            this.rb_Jogos_Cantos_Ht_Visitante.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rb_Jogos_Cantos_Ht_Visitante.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rb_Jogos_Cantos_Ht_Visitante.UseVisualStyleBackColor = false;
             // 
             // rb_Jogos_Cantos_Ht_Mandante
             // 
@@ -476,11 +426,11 @@
             this.rb_Jogos_Cantos_Ht_Mandante.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rb_Jogos_Cantos_Ht_Mandante.CheckedState.InnerOffset = -4;
             this.rb_Jogos_Cantos_Ht_Mandante.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.rb_Jogos_Cantos_Ht_Mandante.Location = new System.Drawing.Point(6, 39);
+            this.rb_Jogos_Cantos_Ht_Mandante.Location = new System.Drawing.Point(6, 36);
             this.rb_Jogos_Cantos_Ht_Mandante.Name = "rb_Jogos_Cantos_Ht_Mandante";
-            this.rb_Jogos_Cantos_Ht_Mandante.Size = new System.Drawing.Size(97, 24);
+            this.rb_Jogos_Cantos_Ht_Mandante.Size = new System.Drawing.Size(92, 24);
             this.rb_Jogos_Cantos_Ht_Mandante.TabIndex = 3;
-            this.rb_Jogos_Cantos_Ht_Mandante.Text = "Mandante";
+            this.rb_Jogos_Cantos_Ht_Mandante.Text = "Selecione";
             this.guna2HtmlToolTip1.SetToolTip(this.rb_Jogos_Cantos_Ht_Mandante, "Selecione Uma Equipe Para Realizar Consulta");
             this.rb_Jogos_Cantos_Ht_Mandante.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.rb_Jogos_Cantos_Ht_Mandante.UncheckedState.BorderThickness = 2;
@@ -598,8 +548,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2RadioButton rb_Jogos_Cantos_Ht_Mandante;
-        private Guna.UI2.WinForms.Guna2RadioButton rb_Jogos_Gols_Ht_Visitante;
         private Guna.UI2.WinForms.Guna2RadioButton rb_Jogos_Gols_Ht_Mandante;
-        private Guna.UI2.WinForms.Guna2RadioButton rb_Jogos_Cantos_Ht_Visitante;
     }
 }

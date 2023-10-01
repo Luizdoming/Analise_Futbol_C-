@@ -82,23 +82,11 @@ namespace StatisticasFutbol
                 equipe = Cbo_equipes.SelectedItem.ToString();
                 sql = "SELECT Data, Home, EHTHome as Cantos_H, EHTAway as Cantos_A, Away, TotalEHT as Total " +
                       "FROM brasil WHERE Home ='" + equipe + "'" + " AND TotalEHT > 3 " +
+                      "OR Away ='" + equipe + "'" + " AND TotalEHT > 3 " +
                       "AND Data BETWEEN " + conexao.Data_Br + " AND CURDATE() ORDER BY Data DESC";
 
                 conexao.AdcionarDados_Grid(sql, dgv_dados);
-                lbl_result.Text = $"Como Mandante Encontramos {dgv_dados.RowCount} Jogos Para a Equipe Do {equipe} Com Uma Média de  {CalcularMedia(dgv_dados)} Cantos Por Partidas No HT";
-                return;
-            }
-
-            //BUSCAR JOGOS COM MAIS DE 3 ESCANTEIOS DAS EQUIPES JOGANDO COMO VISITANTE
-            if (Cbo_equipes.SelectedValue != null || rb_Jogos_Cantos_Ht_Visitante.Checked)
-            {
-                equipe = Cbo_equipes.SelectedItem.ToString();
-                sql = "SELECT Data, Home, EHTHome as Cantos_H, EHTAway as Cantos_V, Away, TotalEHT as Total " +
-                      "FROM brasil WHERE Away ='" + equipe + "'" + " AND TotalEHT > 3 " +
-                      "AND Data BETWEEN " + conexao.Data_Br + " AND CURDATE() ORDER BY Data DESC";
-
-                conexao.AdcionarDados_Grid(sql, dgv_dados);
-                lbl_result.Text = $"Como Visitante Encontramos {dgv_dados.RowCount} Jogos Para a Equipe Do {equipe} Com Uma Média de  {CalcularMedia(dgv_dados)} Cantos Por Partidas No HT";
+                lbl_result.Text = $"Como Mandante Encontramos {dgv_dados.RowCount} Jogos Para a Equipe Do {equipe} ";
                 return;
             }
 
@@ -108,25 +96,14 @@ namespace StatisticasFutbol
                 equipe = Cbo_equipes.SelectedItem.ToString();
                 sql = "SELECT Data, Home, GolHome as Gol_C, GolAway as Gol_V, Away, TotalGolHT as Total " +
                       "FROM brasil WHERE Home ='" + equipe + "'" + " AND TotalGolHT > 0 " +
+                      "OR Away ='" + equipe + "'" + " AND TotalGolHT > 0 " +
                       "AND Data BETWEEN " + conexao.Data_Br + " AND CURDATE() ORDER BY Data DESC";
 
                 conexao.AdcionarDados_Grid(sql, dgv_dados);
-                lbl_result.Text = $"Encontramos {dgv_dados.RowCount} Jogos Com Gols No HT Para a Equipe Do {equipe} Com Uma Média de  {CalcularMedia(dgv_dados)} Gols Por Partidas Jogando Em Casa";
+                lbl_result.Text = $"Encontramos {dgv_dados.RowCount} Jogos Com Gols No HT Para a Equipe Do {equipe} ";
                 return;
             }
 
-            //BUSCAR JOGOS ONDE TIVEMOS PELO MENOS 1 GOL OU MAIS NO HT DA EQUIPE JOGANDO FORA   
-            if (Cbo_equipes.SelectedValue != null || rb_Jogos_Gols_Ht_Visitante.Checked)
-            {
-                equipe = Cbo_equipes.SelectedItem.ToString();
-                sql = "SELECT Data, Home, GolHome as Gol_C, GolAway as Gol_V, Away, TotalGolHT as Total " +
-                      "FROM brasil WHERE Away ='" + equipe + "'" + " AND TotalGolHT > 0 " +
-                      "AND Data BETWEEN " + conexao.Data_Br + " AND CURDATE() ORDER BY Data DESC";
-
-                conexao.AdcionarDados_Grid(sql, dgv_dados);
-                lbl_result.Text = $"Encontramos {dgv_dados.RowCount} Jogos Com Gols No HT Para a Equipe Do {equipe} Com Uma Média de  {CalcularMedia(dgv_dados)} Gols Por Partidas Jogando Fora";
-                return;
-            }
         }
 
         private void Cbo_equipes_SelectedValueChanged(object sender, System.EventArgs e)
