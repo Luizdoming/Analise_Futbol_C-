@@ -136,7 +136,7 @@
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.DimGray;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1160, 0);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1236, 0);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(35, 25);
             this.guna2ControlBox1.TabIndex = 0;
@@ -148,7 +148,7 @@
             this.guna2ControlBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.DimGray;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1123, 0);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1199, 0);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(35, 25);
             this.guna2ControlBox2.TabIndex = 1;
@@ -157,6 +157,7 @@
             // 
             this.dgv_brasil.AllowUserToAddRows = false;
             this.dgv_brasil.AllowUserToDeleteRows = false;
+            this.dgv_brasil.AllowUserToResizeColumns = false;
             this.dgv_brasil.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
@@ -167,16 +168,16 @@
             this.dgv_brasil.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_brasil.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgv_brasil.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
+            this.dgv_brasil.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_brasil.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_brasil.ColumnHeadersHeight = 30;
-            this.dgv_brasil.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgv_brasil.ColumnHeadersHeight = 25;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -198,7 +199,7 @@
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_brasil.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_brasil.RowHeadersVisible = false;
-            this.dgv_brasil.RowHeadersWidth = 32;
+            this.dgv_brasil.RowHeadersWidth = 28;
             this.dgv_brasil.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
@@ -212,7 +213,7 @@
             this.dgv_brasil.ShowCellToolTips = false;
             this.dgv_brasil.ShowEditingIcon = false;
             this.dgv_brasil.ShowRowErrors = false;
-            this.dgv_brasil.Size = new System.Drawing.Size(661, 512);
+            this.dgv_brasil.Size = new System.Drawing.Size(732, 512);
             this.dgv_brasil.TabIndex = 2;
             this.dgv_brasil.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_brasil.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -225,8 +226,8 @@
             this.dgv_brasil.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgv_brasil.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgv_brasil.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgv_brasil.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgv_brasil.ThemeStyle.HeaderStyle.Height = 30;
+            this.dgv_brasil.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgv_brasil.ThemeStyle.HeaderStyle.Height = 25;
             this.dgv_brasil.ThemeStyle.ReadOnly = false;
             this.dgv_brasil.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_brasil.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -264,7 +265,7 @@
             this.cbo_Home_brasil.ForeColor = System.Drawing.Color.DarkGray;
             this.cbo_Home_brasil.IntegralHeight = false;
             this.cbo_Home_brasil.ItemHeight = 22;
-            this.cbo_Home_brasil.Location = new System.Drawing.Point(888, 40);
+            this.cbo_Home_brasil.Location = new System.Drawing.Point(957, 52);
             this.cbo_Home_brasil.Name = "cbo_Home_brasil";
             this.cbo_Home_brasil.Size = new System.Drawing.Size(140, 28);
             this.cbo_Home_brasil.Sorted = true;
@@ -291,7 +292,7 @@
             this.cbo_away_brasil.ForeColor = System.Drawing.Color.DarkGray;
             this.cbo_away_brasil.IntegralHeight = false;
             this.cbo_away_brasil.ItemHeight = 22;
-            this.cbo_away_brasil.Location = new System.Drawing.Point(1054, 40);
+            this.cbo_away_brasil.Location = new System.Drawing.Point(1123, 52);
             this.cbo_away_brasil.Name = "cbo_away_brasil";
             this.cbo_away_brasil.Size = new System.Drawing.Size(140, 28);
             this.cbo_away_brasil.Sorted = true;
@@ -390,9 +391,9 @@
             this.Br_totalsofridoaway.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.Br_totalsofridoaway.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Br_totalsofridoaway.ForeColor = System.Drawing.Color.DarkGray;
-            this.Br_totalsofridoaway.Location = new System.Drawing.Point(1138, 345);
+            this.Br_totalsofridoaway.Location = new System.Drawing.Point(1214, 345);
             this.Br_totalsofridoaway.Name = "Br_totalsofridoaway";
-            this.Br_totalsofridoaway.Size = new System.Drawing.Size(55, 27);
+            this.Br_totalsofridoaway.Size = new System.Drawing.Size(51, 27);
             this.Br_totalsofridoaway.TabIndex = 81;
             this.Br_totalsofridoaway.Tag = "A";
             this.Br_totalsofridoaway.Text = "0";
@@ -412,9 +413,9 @@
             this.Br_totalGolSofrido.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.Br_totalGolSofrido.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Br_totalGolSofrido.ForeColor = System.Drawing.Color.DarkGray;
-            this.Br_totalGolSofrido.Location = new System.Drawing.Point(918, 344);
+            this.Br_totalGolSofrido.Location = new System.Drawing.Point(992, 344);
             this.Br_totalGolSofrido.Name = "Br_totalGolSofrido";
-            this.Br_totalGolSofrido.Size = new System.Drawing.Size(55, 25);
+            this.Br_totalGolSofrido.Size = new System.Drawing.Size(51, 25);
             this.Br_totalGolSofrido.TabIndex = 80;
             this.Br_totalGolSofrido.Tag = "H";
             this.Br_totalGolSofrido.Text = "0";
@@ -434,9 +435,9 @@
             this.Br_golsaway.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.Br_golsaway.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Br_golsaway.ForeColor = System.Drawing.Color.DarkGray;
-            this.Br_golsaway.Location = new System.Drawing.Point(1138, 239);
+            this.Br_golsaway.Location = new System.Drawing.Point(1214, 239);
             this.Br_golsaway.Name = "Br_golsaway";
-            this.Br_golsaway.Size = new System.Drawing.Size(55, 27);
+            this.Br_golsaway.Size = new System.Drawing.Size(51, 27);
             this.Br_golsaway.TabIndex = 78;
             this.Br_golsaway.Tag = "A";
             this.Br_golsaway.Text = "0";
@@ -456,9 +457,9 @@
             this.Br_golsFeito.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.Br_golsFeito.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Br_golsFeito.ForeColor = System.Drawing.Color.DarkGray;
-            this.Br_golsFeito.Location = new System.Drawing.Point(918, 238);
+            this.Br_golsFeito.Location = new System.Drawing.Point(992, 238);
             this.Br_golsFeito.Name = "Br_golsFeito";
-            this.Br_golsFeito.Size = new System.Drawing.Size(55, 25);
+            this.Br_golsFeito.Size = new System.Drawing.Size(51, 25);
             this.Br_golsFeito.TabIndex = 79;
             this.Br_golsFeito.Tag = "H";
             this.Br_golsFeito.Text = "0";
@@ -478,9 +479,9 @@
             this.Br_mediagosAway.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.Br_mediagosAway.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Br_mediagosAway.ForeColor = System.Drawing.Color.DarkGray;
-            this.Br_mediagosAway.Location = new System.Drawing.Point(1138, 292);
+            this.Br_mediagosAway.Location = new System.Drawing.Point(1214, 292);
             this.Br_mediagosAway.Name = "Br_mediagosAway";
-            this.Br_mediagosAway.Size = new System.Drawing.Size(55, 27);
+            this.Br_mediagosAway.Size = new System.Drawing.Size(51, 27);
             this.Br_mediagosAway.TabIndex = 76;
             this.Br_mediagosAway.Tag = "A";
             this.Br_mediagosAway.Text = "0";
@@ -500,9 +501,9 @@
             this.Br_mediagolFeito.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.Br_mediagolFeito.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Br_mediagolFeito.ForeColor = System.Drawing.Color.DarkGray;
-            this.Br_mediagolFeito.Location = new System.Drawing.Point(918, 291);
+            this.Br_mediagolFeito.Location = new System.Drawing.Point(992, 291);
             this.Br_mediagolFeito.Name = "Br_mediagolFeito";
-            this.Br_mediagolFeito.Size = new System.Drawing.Size(55, 25);
+            this.Br_mediagolFeito.Size = new System.Drawing.Size(51, 25);
             this.Br_mediagolFeito.TabIndex = 77;
             this.Br_mediagolFeito.Tag = "H";
             this.Br_mediagolFeito.Text = "0";
@@ -522,9 +523,9 @@
             this.Br_Vitoriasaway.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.Br_Vitoriasaway.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Br_Vitoriasaway.ForeColor = System.Drawing.Color.DarkGray;
-            this.Br_Vitoriasaway.Location = new System.Drawing.Point(1138, 451);
+            this.Br_Vitoriasaway.Location = new System.Drawing.Point(1214, 451);
             this.Br_Vitoriasaway.Name = "Br_Vitoriasaway";
-            this.Br_Vitoriasaway.Size = new System.Drawing.Size(55, 27);
+            this.Br_Vitoriasaway.Size = new System.Drawing.Size(51, 27);
             this.Br_Vitoriasaway.TabIndex = 74;
             this.Br_Vitoriasaway.Tag = "A";
             this.Br_Vitoriasaway.Text = "0";
@@ -544,9 +545,9 @@
             this.Br_Vitoria.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.Br_Vitoria.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Br_Vitoria.ForeColor = System.Drawing.Color.DarkGray;
-            this.Br_Vitoria.Location = new System.Drawing.Point(918, 450);
+            this.Br_Vitoria.Location = new System.Drawing.Point(992, 450);
             this.Br_Vitoria.Name = "Br_Vitoria";
-            this.Br_Vitoria.Size = new System.Drawing.Size(55, 25);
+            this.Br_Vitoria.Size = new System.Drawing.Size(51, 25);
             this.Br_Vitoria.TabIndex = 75;
             this.Br_Vitoria.Tag = "H";
             this.Br_Vitoria.Text = "0";
@@ -566,9 +567,9 @@
             this.Br_mais_2_away.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.Br_mais_2_away.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Br_mais_2_away.ForeColor = System.Drawing.Color.DarkGray;
-            this.Br_mais_2_away.Location = new System.Drawing.Point(1138, 557);
+            this.Br_mais_2_away.Location = new System.Drawing.Point(1214, 557);
             this.Br_mais_2_away.Name = "Br_mais_2_away";
-            this.Br_mais_2_away.Size = new System.Drawing.Size(55, 27);
+            this.Br_mais_2_away.Size = new System.Drawing.Size(51, 27);
             this.Br_mais_2_away.TabIndex = 71;
             this.Br_mais_2_away.Tag = "A";
             this.Br_mais_2_away.Text = "0";
@@ -588,9 +589,9 @@
             this.Br_mais_1_Away.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.Br_mais_1_Away.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Br_mais_1_Away.ForeColor = System.Drawing.Color.DarkGray;
-            this.Br_mais_1_Away.Location = new System.Drawing.Point(1138, 504);
+            this.Br_mais_1_Away.Location = new System.Drawing.Point(1214, 504);
             this.Br_mais_1_Away.Name = "Br_mais_1_Away";
-            this.Br_mais_1_Away.Size = new System.Drawing.Size(55, 27);
+            this.Br_mais_1_Away.Size = new System.Drawing.Size(51, 27);
             this.Br_mais_1_Away.TabIndex = 72;
             this.Br_mais_1_Away.Tag = "A";
             this.Br_mais_1_Away.Text = "0";
@@ -600,7 +601,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DarkGray;
-            this.label6.Location = new System.Drawing.Point(1002, 185);
+            this.label6.Location = new System.Drawing.Point(1074, 185);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(109, 14);
             this.label6.TabIndex = 46;
@@ -621,9 +622,9 @@
             this.Br_MaisDe_1_Gol.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.Br_MaisDe_1_Gol.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Br_MaisDe_1_Gol.ForeColor = System.Drawing.Color.DarkGray;
-            this.Br_MaisDe_1_Gol.Location = new System.Drawing.Point(918, 503);
+            this.Br_MaisDe_1_Gol.Location = new System.Drawing.Point(992, 503);
             this.Br_MaisDe_1_Gol.Name = "Br_MaisDe_1_Gol";
-            this.Br_MaisDe_1_Gol.Size = new System.Drawing.Size(55, 25);
+            this.Br_MaisDe_1_Gol.Size = new System.Drawing.Size(51, 25);
             this.Br_MaisDe_1_Gol.TabIndex = 73;
             this.Br_MaisDe_1_Gol.Tag = "H";
             this.Br_MaisDe_1_Gol.Text = "0";
@@ -633,7 +634,7 @@
             this.label7.BackColor = System.Drawing.Color.Silver;
             this.label7.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DarkGray;
-            this.label7.Location = new System.Drawing.Point(981, 210);
+            this.label7.Location = new System.Drawing.Point(1053, 210);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(151, 2);
             this.label7.TabIndex = 47;
@@ -643,7 +644,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DarkGray;
-            this.label9.Location = new System.Drawing.Point(1024, 238);
+            this.label9.Location = new System.Drawing.Point(1096, 238);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(64, 14);
             this.label9.TabIndex = 48;
@@ -664,9 +665,9 @@
             this.Br_semtomagolAway.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.Br_semtomagolAway.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Br_semtomagolAway.ForeColor = System.Drawing.Color.DarkGray;
-            this.Br_semtomagolAway.Location = new System.Drawing.Point(1138, 610);
+            this.Br_semtomagolAway.Location = new System.Drawing.Point(1214, 610);
             this.Br_semtomagolAway.Name = "Br_semtomagolAway";
-            this.Br_semtomagolAway.Size = new System.Drawing.Size(55, 27);
+            this.Br_semtomagolAway.Size = new System.Drawing.Size(51, 27);
             this.Br_semtomagolAway.TabIndex = 68;
             this.Br_semtomagolAway.Tag = "A";
             this.Br_semtomagolAway.Text = "0";
@@ -686,9 +687,9 @@
             this.Br_Maisde_2_gol.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.Br_Maisde_2_gol.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Br_Maisde_2_gol.ForeColor = System.Drawing.Color.DarkGray;
-            this.Br_Maisde_2_gol.Location = new System.Drawing.Point(918, 556);
+            this.Br_Maisde_2_gol.Location = new System.Drawing.Point(992, 556);
             this.Br_Maisde_2_gol.Name = "Br_Maisde_2_gol";
-            this.Br_Maisde_2_gol.Size = new System.Drawing.Size(55, 25);
+            this.Br_Maisde_2_gol.Size = new System.Drawing.Size(51, 25);
             this.Br_Maisde_2_gol.TabIndex = 70;
             this.Br_Maisde_2_gol.Tag = "H";
             this.Br_Maisde_2_gol.Text = "0";
@@ -698,7 +699,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.DarkGray;
-            this.label20.Location = new System.Drawing.Point(1008, 549);
+            this.label20.Location = new System.Drawing.Point(1080, 549);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(96, 14);
             this.label20.TabIndex = 57;
@@ -709,7 +710,7 @@
             this.label8.BackColor = System.Drawing.Color.Silver;
             this.label8.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DarkGray;
-            this.label8.Location = new System.Drawing.Point(981, 263);
+            this.label8.Location = new System.Drawing.Point(1053, 263);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(151, 2);
             this.label8.TabIndex = 49;
@@ -719,7 +720,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.DarkGray;
-            this.label22.Location = new System.Drawing.Point(990, 600);
+            this.label22.Location = new System.Drawing.Point(1062, 600);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(133, 14);
             this.label22.TabIndex = 59;
@@ -730,7 +731,7 @@
             this.label16.BackColor = System.Drawing.Color.Silver;
             this.label16.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.DarkGray;
-            this.label16.Location = new System.Drawing.Point(981, 470);
+            this.label16.Location = new System.Drawing.Point(1053, 470);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(151, 2);
             this.label16.TabIndex = 63;
@@ -740,7 +741,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.DarkGray;
-            this.label11.Location = new System.Drawing.Point(1001, 290);
+            this.label11.Location = new System.Drawing.Point(1073, 290);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(110, 14);
             this.label11.TabIndex = 50;
@@ -751,7 +752,7 @@
             this.label19.BackColor = System.Drawing.Color.Silver;
             this.label19.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.DarkGray;
-            this.label19.Location = new System.Drawing.Point(981, 522);
+            this.label19.Location = new System.Drawing.Point(1053, 522);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(151, 2);
             this.label19.TabIndex = 62;
@@ -771,9 +772,9 @@
             this.Br_mediasofridoaway.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.Br_mediasofridoaway.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Br_mediasofridoaway.ForeColor = System.Drawing.Color.DarkGray;
-            this.Br_mediasofridoaway.Location = new System.Drawing.Point(1138, 398);
+            this.Br_mediasofridoaway.Location = new System.Drawing.Point(1214, 398);
             this.Br_mediasofridoaway.Name = "Br_mediasofridoaway";
-            this.Br_mediasofridoaway.Size = new System.Drawing.Size(55, 27);
+            this.Br_mediasofridoaway.Size = new System.Drawing.Size(51, 27);
             this.Br_mediasofridoaway.TabIndex = 67;
             this.Br_mediasofridoaway.Tag = "A";
             this.Br_mediasofridoaway.Text = "0";
@@ -783,7 +784,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.DarkGray;
-            this.label18.Location = new System.Drawing.Point(1008, 496);
+            this.label18.Location = new System.Drawing.Point(1080, 496);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(96, 14);
             this.label18.TabIndex = 56;
@@ -794,7 +795,7 @@
             this.label10.BackColor = System.Drawing.Color.Silver;
             this.label10.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.DarkGray;
-            this.label10.Location = new System.Drawing.Point(981, 315);
+            this.label10.Location = new System.Drawing.Point(1053, 315);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(151, 2);
             this.label10.TabIndex = 51;
@@ -804,7 +805,7 @@
             this.label21.BackColor = System.Drawing.Color.Silver;
             this.label21.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.DarkGray;
-            this.label21.Location = new System.Drawing.Point(981, 574);
+            this.label21.Location = new System.Drawing.Point(1053, 574);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(151, 2);
             this.label21.TabIndex = 60;
@@ -824,9 +825,9 @@
             this.Br_JogosSemMarcar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.Br_JogosSemMarcar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Br_JogosSemMarcar.ForeColor = System.Drawing.Color.DarkGray;
-            this.Br_JogosSemMarcar.Location = new System.Drawing.Point(918, 609);
+            this.Br_JogosSemMarcar.Location = new System.Drawing.Point(992, 609);
             this.Br_JogosSemMarcar.Name = "Br_JogosSemMarcar";
-            this.Br_JogosSemMarcar.Size = new System.Drawing.Size(55, 25);
+            this.Br_JogosSemMarcar.Size = new System.Drawing.Size(51, 25);
             this.Br_JogosSemMarcar.TabIndex = 69;
             this.Br_JogosSemMarcar.Tag = "H";
             this.Br_JogosSemMarcar.Text = "0";
@@ -836,7 +837,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.DarkGray;
-            this.label17.Location = new System.Drawing.Point(1013, 444);
+            this.label17.Location = new System.Drawing.Point(1085, 444);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(87, 14);
             this.label17.TabIndex = 58;
@@ -847,7 +848,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.DarkGray;
-            this.label13.Location = new System.Drawing.Point(995, 343);
+            this.label13.Location = new System.Drawing.Point(1067, 343);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(123, 14);
             this.label13.TabIndex = 52;
@@ -858,7 +859,7 @@
             this.label23.BackColor = System.Drawing.Color.Silver;
             this.label23.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.DarkGray;
-            this.label23.Location = new System.Drawing.Point(981, 626);
+            this.label23.Location = new System.Drawing.Point(1053, 626);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(151, 2);
             this.label23.TabIndex = 61;
@@ -878,9 +879,9 @@
             this.Br_jogosAway.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.Br_jogosAway.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Br_jogosAway.ForeColor = System.Drawing.Color.DarkGray;
-            this.Br_jogosAway.Location = new System.Drawing.Point(1138, 186);
+            this.Br_jogosAway.Location = new System.Drawing.Point(1214, 186);
             this.Br_jogosAway.Name = "Br_jogosAway";
-            this.Br_jogosAway.Size = new System.Drawing.Size(55, 27);
+            this.Br_jogosAway.Size = new System.Drawing.Size(51, 27);
             this.Br_jogosAway.TabIndex = 65;
             this.Br_jogosAway.Tag = "A";
             this.Br_jogosAway.Text = "0";
@@ -890,7 +891,7 @@
             this.label14.BackColor = System.Drawing.Color.Silver;
             this.label14.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.DarkGray;
-            this.label14.Location = new System.Drawing.Point(981, 419);
+            this.label14.Location = new System.Drawing.Point(1053, 419);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(151, 2);
             this.label14.TabIndex = 55;
@@ -900,7 +901,7 @@
             this.label12.BackColor = System.Drawing.Color.Silver;
             this.label12.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.DarkGray;
-            this.label12.Location = new System.Drawing.Point(981, 367);
+            this.label12.Location = new System.Drawing.Point(1053, 367);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(151, 2);
             this.label12.TabIndex = 53;
@@ -920,9 +921,9 @@
             this.Br_total_Jogos.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.Br_total_Jogos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Br_total_Jogos.ForeColor = System.Drawing.Color.DarkGray;
-            this.Br_total_Jogos.Location = new System.Drawing.Point(918, 185);
+            this.Br_total_Jogos.Location = new System.Drawing.Point(992, 185);
             this.Br_total_Jogos.Name = "Br_total_Jogos";
-            this.Br_total_Jogos.Size = new System.Drawing.Size(55, 25);
+            this.Br_total_Jogos.Size = new System.Drawing.Size(51, 25);
             this.Br_total_Jogos.TabIndex = 64;
             this.Br_total_Jogos.Tag = "H";
             this.Br_total_Jogos.Text = "0";
@@ -942,9 +943,9 @@
             this.Br_MediaGolSofrido.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.Br_MediaGolSofrido.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Br_MediaGolSofrido.ForeColor = System.Drawing.Color.DarkGray;
-            this.Br_MediaGolSofrido.Location = new System.Drawing.Point(918, 397);
+            this.Br_MediaGolSofrido.Location = new System.Drawing.Point(992, 397);
             this.Br_MediaGolSofrido.Name = "Br_MediaGolSofrido";
-            this.Br_MediaGolSofrido.Size = new System.Drawing.Size(55, 25);
+            this.Br_MediaGolSofrido.Size = new System.Drawing.Size(51, 25);
             this.Br_MediaGolSofrido.TabIndex = 66;
             this.Br_MediaGolSofrido.Tag = "H";
             this.Br_MediaGolSofrido.Text = "0";
@@ -954,7 +955,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.DarkGray;
-            this.label15.Location = new System.Drawing.Point(991, 395);
+            this.label15.Location = new System.Drawing.Point(1063, 395);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(130, 14);
             this.label15.TabIndex = 54;
@@ -980,7 +981,7 @@
             this.lbl_br.BackColor = System.Drawing.Color.Silver;
             this.lbl_br.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_br.ForeColor = System.Drawing.Color.LightGray;
-            this.lbl_br.Location = new System.Drawing.Point(1021, 107);
+            this.lbl_br.Location = new System.Drawing.Point(1090, 119);
             this.lbl_br.Name = "lbl_br";
             this.lbl_br.Size = new System.Drawing.Size(50, 5);
             this.lbl_br.TabIndex = 46;
@@ -1212,7 +1213,7 @@
             this.bt_ambas_geral.ForeColor = System.Drawing.Color.DarkGray;
             this.bt_ambas_geral.Location = new System.Drawing.Point(16, 668);
             this.bt_ambas_geral.Name = "bt_ambas_geral";
-            this.bt_ambas_geral.Size = new System.Drawing.Size(55, 30);
+            this.bt_ambas_geral.Size = new System.Drawing.Size(58, 30);
             this.bt_ambas_geral.TabIndex = 64;
             this.bt_ambas_geral.Tag = "z";
             this.bt_ambas_geral.Text = "0";
@@ -1234,7 +1235,7 @@
             this.bt_mais_1_geral.ForeColor = System.Drawing.Color.DarkGray;
             this.bt_mais_1_geral.Location = new System.Drawing.Point(100, 668);
             this.bt_mais_1_geral.Name = "bt_mais_1_geral";
-            this.bt_mais_1_geral.Size = new System.Drawing.Size(55, 30);
+            this.bt_mais_1_geral.Size = new System.Drawing.Size(52, 30);
             this.bt_mais_1_geral.TabIndex = 64;
             this.bt_mais_1_geral.Tag = "z";
             this.bt_mais_1_geral.Text = "0";
@@ -1278,7 +1279,7 @@
             this.bt_totalGol_geral.ForeColor = System.Drawing.Color.DarkGray;
             this.bt_totalGol_geral.Location = new System.Drawing.Point(264, 668);
             this.bt_totalGol_geral.Name = "bt_totalGol_geral";
-            this.bt_totalGol_geral.Size = new System.Drawing.Size(60, 30);
+            this.bt_totalGol_geral.Size = new System.Drawing.Size(57, 30);
             this.bt_totalGol_geral.TabIndex = 64;
             this.bt_totalGol_geral.Tag = "z";
             this.bt_totalGol_geral.Text = "0";
@@ -1300,7 +1301,7 @@
             this.bt_jogos_geral.ForeColor = System.Drawing.Color.DarkGray;
             this.bt_jogos_geral.Location = new System.Drawing.Point(516, 668);
             this.bt_jogos_geral.Name = "bt_jogos_geral";
-            this.bt_jogos_geral.Size = new System.Drawing.Size(58, 30);
+            this.bt_jogos_geral.Size = new System.Drawing.Size(52, 30);
             this.bt_jogos_geral.TabIndex = 64;
             this.bt_jogos_geral.Tag = "z";
             this.bt_jogos_geral.Text = "0";
@@ -1322,7 +1323,7 @@
             this.br_media_gol_geral.ForeColor = System.Drawing.Color.DarkGray;
             this.br_media_gol_geral.Location = new System.Drawing.Point(350, 668);
             this.br_media_gol_geral.Name = "br_media_gol_geral";
-            this.br_media_gol_geral.Size = new System.Drawing.Size(55, 30);
+            this.br_media_gol_geral.Size = new System.Drawing.Size(59, 30);
             this.br_media_gol_geral.TabIndex = 64;
             this.br_media_gol_geral.Tag = "z";
             this.br_media_gol_geral.Text = "0";
@@ -1344,14 +1345,14 @@
             this.bt_semgols_geral.ForeColor = System.Drawing.Color.DarkGray;
             this.bt_semgols_geral.Location = new System.Drawing.Point(433, 668);
             this.bt_semgols_geral.Name = "bt_semgols_geral";
-            this.bt_semgols_geral.Size = new System.Drawing.Size(55, 30);
+            this.bt_semgols_geral.Size = new System.Drawing.Size(56, 30);
             this.bt_semgols_geral.TabIndex = 64;
             this.bt_semgols_geral.Tag = "z";
             this.bt_semgols_geral.Text = "0";
             // 
             // img_awayBr
             // 
-            this.img_awayBr.Location = new System.Drawing.Point(1114, 72);
+            this.img_awayBr.Location = new System.Drawing.Point(1183, 84);
             this.img_awayBr.Name = "img_awayBr";
             this.img_awayBr.Size = new System.Drawing.Size(75, 75);
             this.img_awayBr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1360,7 +1361,7 @@
             // 
             // img_homeBr
             // 
-            this.img_homeBr.Location = new System.Drawing.Point(914, 72);
+            this.img_homeBr.Location = new System.Drawing.Point(983, 84);
             this.img_homeBr.Name = "img_homeBr";
             this.img_homeBr.Size = new System.Drawing.Size(75, 75);
             this.img_homeBr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1384,7 +1385,7 @@
             this.bt_Mcantos.ForeColor = System.Drawing.Color.DarkGray;
             this.bt_Mcantos.Location = new System.Drawing.Point(593, 668);
             this.bt_Mcantos.Name = "bt_Mcantos";
-            this.bt_Mcantos.Size = new System.Drawing.Size(65, 30);
+            this.bt_Mcantos.Size = new System.Drawing.Size(60, 30);
             this.bt_Mcantos.TabIndex = 64;
             this.bt_Mcantos.Tag = "z";
             this.bt_Mcantos.Text = "0";
@@ -1417,7 +1418,7 @@
             this.bt_M_Canto_HT.ForeColor = System.Drawing.Color.DarkGray;
             this.bt_M_Canto_HT.Location = new System.Drawing.Point(678, 668);
             this.bt_M_Canto_HT.Name = "bt_M_Canto_HT";
-            this.bt_M_Canto_HT.Size = new System.Drawing.Size(65, 30);
+            this.bt_M_Canto_HT.Size = new System.Drawing.Size(63, 30);
             this.bt_M_Canto_HT.TabIndex = 64;
             this.bt_M_Canto_HT.Tag = "z";
             this.bt_M_Canto_HT.Text = "0";
@@ -1468,7 +1469,7 @@
             this.label31.BackColor = System.Drawing.Color.Silver;
             this.label31.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.Color.DarkGray;
-            this.label31.Location = new System.Drawing.Point(983, 684);
+            this.label31.Location = new System.Drawing.Point(1053, 684);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(151, 2);
             this.label31.TabIndex = 61;
@@ -1488,9 +1489,9 @@
             this.btn_media_canto_home.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.btn_media_canto_home.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_media_canto_home.ForeColor = System.Drawing.Color.DarkGray;
-            this.btn_media_canto_home.Location = new System.Drawing.Point(920, 667);
+            this.btn_media_canto_home.Location = new System.Drawing.Point(994, 667);
             this.btn_media_canto_home.Name = "btn_media_canto_home";
-            this.btn_media_canto_home.Size = new System.Drawing.Size(55, 25);
+            this.btn_media_canto_home.Size = new System.Drawing.Size(51, 25);
             this.btn_media_canto_home.TabIndex = 69;
             this.btn_media_canto_home.Tag = "H";
             this.btn_media_canto_home.Text = "0";
@@ -1500,7 +1501,7 @@
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Roboto Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.Color.DarkGray;
-            this.label33.Location = new System.Drawing.Point(1007, 658);
+            this.label33.Location = new System.Drawing.Point(1077, 658);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(102, 14);
             this.label33.TabIndex = 59;
@@ -1521,9 +1522,9 @@
             this.btn_media_canto_away.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.btn_media_canto_away.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_media_canto_away.ForeColor = System.Drawing.Color.DarkGray;
-            this.btn_media_canto_away.Location = new System.Drawing.Point(1140, 668);
+            this.btn_media_canto_away.Location = new System.Drawing.Point(1214, 668);
             this.btn_media_canto_away.Name = "btn_media_canto_away";
-            this.btn_media_canto_away.Size = new System.Drawing.Size(55, 27);
+            this.btn_media_canto_away.Size = new System.Drawing.Size(51, 27);
             this.btn_media_canto_away.TabIndex = 68;
             this.btn_media_canto_away.Tag = "A";
             this.btn_media_canto_away.Text = "0";
@@ -1576,7 +1577,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(1197, 710);
+            this.ClientSize = new System.Drawing.Size(1273, 710);
             this.Controls.Add(this.Rb_CartaoAway);
             this.Controls.Add(this.Rb_CartaHome);
             this.Controls.Add(this.label29);

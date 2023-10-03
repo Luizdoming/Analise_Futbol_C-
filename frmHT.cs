@@ -125,5 +125,38 @@ namespace StatisticasFutbol
             return media;
         }
 
+        private void Media_Mandante()
+        {
+            string sql = "SELECT b.Home AS 'Equipe', COUNT(b.Home) AS 'Jogos'," +
+                " SUM(b.GolHome) AS 'Gols', ROUND(AVG(b.GolHome),2) AS 'M_Gols', SUM(b.EHome) AS 'Escanteios'," +
+                " round(AVG(b.EHome),2) AS 'M_Escanteios', SUM(b.CartaoHome) AS 'Cartao'," +
+                " ROUND(AVG(b.CartaoHome),2) AS 'M_Cartao'" +
+                " FROM brasil b" +
+                " WHERE YEAR(DATA) = YEAR(CURDATE()) GROUP BY home ORDER BY Gols DESC, M_Gols DESC;";
+
+            conexao.AdcionarDados_Grid(sql, dgv_dados);
+        }
+
+        private void Media_Visitante()
+        {
+            string sql = "SELECT b.Away AS 'Equipe', COUNT(b.Away) AS 'Jogos', SUM(b.GolAway) AS 'Gols'," +
+                " ROUND(AVG(b.GolAway),2) AS 'M_Gols', SUM(b.Eaway) AS 'Escanteios'," +
+                " ROUND(AVG(b.Eaway),2) AS 'M_Escanteios', SUM(b.CartaoAway) AS 'Cartao'," +
+                " ROUND(AVG(b.CartaoAway),2) AS 'M_Cartao'" +
+                " FROM brasil b " +
+                " WHERE YEAR(DATA) = YEAR(CURDATE()) GROUP BY Away ORDER BY Gols DESC, M_Gols DESC;";
+
+            conexao.AdcionarDados_Grid(sql, dgv_dados);
+        }
+
+        private void guna2RadioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            Media_Mandante();
+        }
+
+        private void guna2RadioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            Media_Visitante();
+        }
     }// Fim Class
 }// Fim name Space
