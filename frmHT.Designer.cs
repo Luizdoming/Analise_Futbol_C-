@@ -62,6 +62,8 @@
             this.guna2HtmlToolTip1 = new Guna.UI2.WinForms.Guna2HtmlToolTip();
             this.guna2RadioButton1 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2RadioButton2 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.Rb_quantidade_Jogos_ = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.Rb_Jogos_Gols_Ht_Away = new Guna.UI2.WinForms.Guna2RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_dados)).BeginInit();
             this.guna2ContainerControl1.SuspendLayout();
             this.guna2ContainerControl2.SuspendLayout();
@@ -83,8 +85,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.dgv_dados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_dados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.dgv_dados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.dgv_dados.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgv_dados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -104,7 +105,7 @@
             this.dgv_dados.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_dados.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
             this.dgv_dados.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.dgv_dados.Location = new System.Drawing.Point(10, 126);
+            this.dgv_dados.Location = new System.Drawing.Point(10, 178);
             this.dgv_dados.MultiSelect = false;
             this.dgv_dados.Name = "dgv_dados";
             this.dgv_dados.ReadOnly = true;
@@ -119,14 +120,14 @@
             this.dgv_dados.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_dados.RowHeadersVisible = false;
             this.dgv_dados.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dgv_dados.Size = new System.Drawing.Size(1001, 486);
+            this.dgv_dados.Size = new System.Drawing.Size(1001, 489);
             this.dgv_dados.TabIndex = 0;
             this.dgv_dados.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_dados.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.dgv_dados.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dgv_dados.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgv_dados.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgv_dados.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.dgv_dados.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.dgv_dados.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.dgv_dados.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dgv_dados.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -201,7 +202,7 @@
             this.lbl_result.AutoSize = true;
             this.lbl_result.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_result.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_result.Location = new System.Drawing.Point(2, 631);
+            this.lbl_result.Location = new System.Drawing.Point(2, 684);
             this.lbl_result.Name = "lbl_result";
             this.lbl_result.Size = new System.Drawing.Size(18, 18);
             this.lbl_result.TabIndex = 4;
@@ -539,13 +540,61 @@
             this.guna2RadioButton2.UseVisualStyleBackColor = false;
             this.guna2RadioButton2.CheckedChanged += new System.EventHandler(this.guna2RadioButton2_CheckedChanged);
             // 
+            // Rb_quantidade_Jogos_
+            // 
+            this.Rb_quantidade_Jogos_.Animated = true;
+            this.Rb_quantidade_Jogos_.AutoSize = true;
+            this.Rb_quantidade_Jogos_.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.Rb_quantidade_Jogos_.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Rb_quantidade_Jogos_.CheckedState.BorderThickness = 0;
+            this.Rb_quantidade_Jogos_.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Rb_quantidade_Jogos_.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.Rb_quantidade_Jogos_.CheckedState.InnerOffset = -4;
+            this.Rb_quantidade_Jogos_.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Rb_quantidade_Jogos_.Location = new System.Drawing.Point(203, 79);
+            this.Rb_quantidade_Jogos_.Name = "Rb_quantidade_Jogos_";
+            this.Rb_quantidade_Jogos_.Size = new System.Drawing.Size(301, 24);
+            this.Rb_quantidade_Jogos_.TabIndex = 3;
+            this.Rb_quantidade_Jogos_.Text = "Quantidade Jogos Com Gols HT Em Casa";
+            this.Rb_quantidade_Jogos_.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.Rb_quantidade_Jogos_.UncheckedState.BorderThickness = 2;
+            this.Rb_quantidade_Jogos_.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.Rb_quantidade_Jogos_.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.Rb_quantidade_Jogos_.UseVisualStyleBackColor = false;
+            this.Rb_quantidade_Jogos_.CheckedChanged += new System.EventHandler(this.Rb_quantidade_Jogos__CheckedChanged);
+            // 
+            // Rb_Jogos_Gols_Ht_Away
+            // 
+            this.Rb_Jogos_Gols_Ht_Away.Animated = true;
+            this.Rb_Jogos_Gols_Ht_Away.AutoSize = true;
+            this.Rb_Jogos_Gols_Ht_Away.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.Rb_Jogos_Gols_Ht_Away.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Rb_Jogos_Gols_Ht_Away.CheckedState.BorderThickness = 0;
+            this.Rb_Jogos_Gols_Ht_Away.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Rb_Jogos_Gols_Ht_Away.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.Rb_Jogos_Gols_Ht_Away.CheckedState.InnerOffset = -4;
+            this.Rb_Jogos_Gols_Ht_Away.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Rb_Jogos_Gols_Ht_Away.Location = new System.Drawing.Point(203, 109);
+            this.Rb_Jogos_Gols_Ht_Away.Name = "Rb_Jogos_Gols_Ht_Away";
+            this.Rb_Jogos_Gols_Ht_Away.Size = new System.Drawing.Size(276, 24);
+            this.Rb_Jogos_Gols_Ht_Away.TabIndex = 3;
+            this.Rb_Jogos_Gols_Ht_Away.Text = "Quantidade Jogos Com Gols HT Fora";
+            this.Rb_Jogos_Gols_Ht_Away.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.Rb_Jogos_Gols_Ht_Away.UncheckedState.BorderThickness = 2;
+            this.Rb_Jogos_Gols_Ht_Away.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.Rb_Jogos_Gols_Ht_Away.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.Rb_Jogos_Gols_Ht_Away.UseVisualStyleBackColor = false;
+            this.Rb_Jogos_Gols_Ht_Away.CheckedChanged += new System.EventHandler(this.Rb_Jogos_Gols_Ht_Away_CheckedChanged);
+            // 
             // frmHT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(1021, 660);
+            this.ClientSize = new System.Drawing.Size(1021, 716);
             this.Controls.Add(this.guna2ContainerControl2);
+            this.Controls.Add(this.Rb_Jogos_Gols_Ht_Away);
+            this.Controls.Add(this.Rb_quantidade_Jogos_);
             this.Controls.Add(this.guna2RadioButton2);
             this.Controls.Add(this.guna2RadioButton1);
             this.Controls.Add(this.guna2ContainerControl1);
@@ -603,5 +652,7 @@
         private Guna.UI2.WinForms.Guna2RadioButton rb_Jogos_Gols_Ht_Mandante;
         private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton2;
         private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton1;
+        private Guna.UI2.WinForms.Guna2RadioButton Rb_quantidade_Jogos_;
+        private Guna.UI2.WinForms.Guna2RadioButton Rb_Jogos_Gols_Ht_Away;
     }
 }

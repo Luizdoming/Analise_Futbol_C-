@@ -15,10 +15,9 @@ namespace StatisticasFutbol
             AdcinarEquiepesCombo();
         }
 
-
         public void AdcinarEquiepesCombo()
         {
-            List<string> Equipes = new List<string>();
+            SortedSet<string> Equipes = new SortedSet<string>();
             Cbo_equipes.Items.Clear();
 
             Equipes.Add("America MG");
@@ -42,9 +41,11 @@ namespace StatisticasFutbol
             Equipes.Add("Sao Paulo");
             Equipes.Add("Vasco");
 
-            Equipes.ForEach(e => Cbo_equipes.Items.Add(e));
+            foreach (string equipe in Equipes)
+            {
+                Cbo_equipes.Items.Add(equipe.ToUpper());
+            }
         }
-
 
         private void Rb_GolsHtAway_CheckedChanged(object sender, System.EventArgs e)
         {
@@ -76,7 +77,7 @@ namespace StatisticasFutbol
             string equipe;
             lbl_result.Text = string.Empty;
 
-            //BUSCAR JOGOS COM MAIS DE 3 ESCANTEIOS DAS EQUIPES JOGANDO EM CASA
+            //BUSCAR JOGOS COM MAIS DE 3 ESCANTEIOS DAS EQUIPES 
             if (Cbo_equipes.SelectedValue != null || rb_Jogos_Cantos_Ht_Mandante.Checked == true)
             {
                 equipe = Cbo_equipes.SelectedItem.ToString();
@@ -86,15 +87,15 @@ namespace StatisticasFutbol
                       "AND Data BETWEEN " + conexao.Data_Br + " AND CURDATE() ORDER BY Data DESC";
 
                 conexao.AdcionarDados_Grid(sql, dgv_dados);
-                lbl_result.Text = $"Como Mandante Encontramos {dgv_dados.RowCount} Jogos Para a Equipe Do {equipe} ";
+                lbl_result.Text = $"Encontramos {dgv_dados.RowCount} Jogos Para a Equipe Do {equipe} ";
                 return;
             }
 
-            //BUSCAR JOGOS ONDE TIVEMOS PELO MENOS 1 GOL OU MAIS NO HT DA EQUIPE JOGANDO EM CASA
+            //BUSCAR JOGOS ONDE TIVEMOS PELO MENOS 1 GOL OU MAIS NO HT DA EQUIPE 
             if (Cbo_equipes.SelectedValue != null || rb_Jogos_Gols_Ht_Mandante.Checked)
             {
                 equipe = Cbo_equipes.SelectedItem.ToString();
-                sql = "SELECT Data, Home, GolHome as Gol_C, GolAway as Gol_V, Away, TotalGolHT as Total " +
+                sql = "SELECT Data, Home, GolHTHome as Gol_C, GolHTAway as Gol_V, Away, TotalGolHT as Total " +
                       "FROM brasil WHERE Home ='" + equipe + "'" + " AND TotalGolHT > 0 " +
                       "OR Away ='" + equipe + "'" + " AND TotalGolHT > 0 " +
                       "AND Data BETWEEN " + conexao.Data_Br + " AND CURDATE() ORDER BY Data DESC";
@@ -103,7 +104,6 @@ namespace StatisticasFutbol
                 lbl_result.Text = $"Encontramos {dgv_dados.RowCount} Jogos Com Gols No HT Para a Equipe Do {equipe} ";
                 return;
             }
-
         }
 
         private void Cbo_equipes_SelectedValueChanged(object sender, System.EventArgs e)
@@ -127,6 +127,7 @@ namespace StatisticasFutbol
 
         private void Media_Mandante()
         {
+            lbl_result.ResetText();
             string sql = "SELECT b.Home AS 'Equipe', COUNT(b.Home) AS 'Jogos'," +
                 " SUM(b.GolHome) AS 'Gols', ROUND(AVG(b.GolHome),2) AS 'M_Gols', SUM(b.EHome) AS 'Escanteios'," +
                 " round(AVG(b.EHome),2) AS 'M_Escanteios', SUM(b.CartaoHome) AS 'Cartao'," +
@@ -139,6 +140,7 @@ namespace StatisticasFutbol
 
         private void Media_Visitante()
         {
+            lbl_result.ResetText();
             string sql = "SELECT b.Away AS 'Equipe', COUNT(b.Away) AS 'Jogos', SUM(b.GolAway) AS 'Gols'," +
                 " ROUND(AVG(b.GolAway),2) AS 'M_Gols', SUM(b.Eaway) AS 'Escanteios'," +
                 " ROUND(AVG(b.Eaway),2) AS 'M_Escanteios', SUM(b.CartaoAway) AS 'Cartao'," +
@@ -149,6 +151,33 @@ namespace StatisticasFutbol
             conexao.AdcionarDados_Grid(sql, dgv_dados);
         }
 
+        private void Total_jogos_Gols_HT_Home()
+        {
+            // Quantidade de Jogos com Gols No HT por Equipes
+            lbl_result.ResetText();
+            if (Rb_quantidade_Jogos_.Checked is true)
+            {
+                string sql = "SELECT Home as Equipe, COUNT(*) as Qtd_Jogos, SUM(GolHTHome) as Total_Gols FROM brasil " +
+                       " WHERE YEAR(Data) = YEAR(CURDATE())" +
+                       " GROUP BY Home ORDER BY Total_Gols DESC";
+                conexao.AdcionarDados_Grid(sql, dgv_dados);
+                return;
+            }
+        }
+
+        private void Total_Jogos_Gols_Ht_Away()
+        {
+            lbl_result.ResetText();
+            if (Rb_Jogos_Gols_Ht_Away.Checked is true)
+            {
+                string sql = "SELECT Away as Equipe, COUNT(*) as Qtd_Jogos, SUM(GolHTAway) as Total_Gols FROM brasil " +
+                       " WHERE YEAR(Data) = YEAR(CURDATE())" +
+                       " GROUP BY Away ORDER BY Total_Gols DESC";
+                conexao.AdcionarDados_Grid(sql, dgv_dados);
+                return;
+            }
+        }
+
         private void guna2RadioButton1_CheckedChanged(object sender, EventArgs e)
         {
             Media_Mandante();
@@ -157,6 +186,16 @@ namespace StatisticasFutbol
         private void guna2RadioButton2_CheckedChanged(object sender, EventArgs e)
         {
             Media_Visitante();
+        }
+
+        private void Rb_quantidade_Jogos__CheckedChanged(object sender, EventArgs e)
+        {
+            Total_jogos_Gols_HT_Home();
+        }
+
+        private void Rb_Jogos_Gols_Ht_Away_CheckedChanged(object sender, EventArgs e)
+        {
+            Total_Jogos_Gols_Ht_Away();
         }
     }// Fim Class
 }// Fim name Space
