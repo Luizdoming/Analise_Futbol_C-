@@ -1,0 +1,78 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\System_Desenvolvidos\\Futbol\\StatisticasFutbol\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{77F07AD1-F865-4D18-8F77-F280B706EF1A}|StatisticasFutbol.csproj|d:\\system_desenvolvidos\\futbol\\statisticasfutbol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{77F07AD1-F865-4D18-8F77-F280B706EF1A}|StatisticasFutbol.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77F07AD1-F865-4D18-8F77-F280B706EF1A}|StatisticasFutbol.csproj|d:\\system_desenvolvidos\\futbol\\statisticasfutbol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77F07AD1-F865-4D18-8F77-F280B706EF1A}|StatisticasFutbol.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77F07AD1-F865-4D18-8F77-F280B706EF1A}|StatisticasFutbol.csproj|d:\\system_desenvolvidos\\futbol\\statisticasfutbol\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77F07AD1-F865-4D18-8F77-F280B706EF1A}|StatisticasFutbol.csproj|solutionrelative:conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f37f5141-198e-4181-9582-7b026ee8f915}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\System_Desenvolvidos\\Futbol\\StatisticasFutbol\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\System_Desenvolvidos\\Futbol\\StatisticasFutbol\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAACgCAAAAAAAAAAAqwCoCAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-03T12:01:31.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\System_Desenvolvidos\\Futbol\\StatisticasFutbol\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\System_Desenvolvidos\\Futbol\\StatisticasFutbol\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-03T12:01:12.823Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Conexao.cs",
+              "DocumentMoniker": "D:\\System_Desenvolvidos\\Futbol\\StatisticasFutbol\\Conexao.cs",
+              "RelativeDocumentMoniker": "Conexao.cs",
+              "ToolTip": "D:\\System_Desenvolvidos\\Futbol\\StatisticasFutbol\\Conexao.cs",
+              "RelativeToolTip": "Conexao.cs",
+              "ViewState": "AQIAAF0BAAAAAAAAAAAAAF8AAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-03T11:19:09.337Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
